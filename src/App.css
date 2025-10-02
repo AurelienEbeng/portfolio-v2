@@ -6,6 +6,12 @@ body{
     background-color: #161513;
 }
 
+@layer base{
+  p{
+    color: white;
+  }
+}
+
 .tech-logo{
   display: inline-block;
   width: 42px;
