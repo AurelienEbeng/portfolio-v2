@@ -13,16 +13,18 @@ const Projects = () => {
               className="rounded-2xl"
             />
           </div>
-          <p className="text-black">
+          <div className="text-4xl font-bold mt-2">Study Tracker</div>
+          <p className="text-black text-lg">
             MVC application with study time tracking, user authentification,
-            account management, task and session management, and analytics and
-            reporting.
+            account management, task management, session management, analytics and
+            reporting. 
           </p>
+          <p className="text-black text-lg">I have recorded over 700 hours of studying.</p>
           <a
             href="https://github.com/AurelienEbeng/StudyTracker"
             target="blank"
           >
-            <span className="tech-logo github-logo text-white"></span>
+            <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
         <div className="border border-gray-200 rounded-2xl h-130 p-4">
