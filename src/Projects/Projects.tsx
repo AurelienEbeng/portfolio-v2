@@ -28,21 +28,25 @@ const Projects = () => {
           </a>
         </div>
         <div className="border border-gray-200 rounded-2xl h-130 p-4">
-          <img
-            src="src/assets/study_tracker_highlight.png"
-            alt="study tracker image"
-            className="rounded-2xl"
-          />
-          <p>
-            MVC application with study time tracking, user authentification,
-            account management, task and session management, and analytics and
-            reporting.
+          <div className="relative">
+            <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
+            <img
+              src="src/assets/bug_tracker.png"
+              alt="study tracker image"
+              className="rounded-2xl"
+            />
+          </div>
+          <div className="text-4xl font-bold mt-2">Bug Tracker</div>
+          <p className="text-black text-lg">
+            MVC application with user authentification,
+            account management, roles and permissions.
           </p>
+          <p className="text-black text-lg">Permits teams to manage bugs.</p>
           <a
-            href="https://github.com/AurelienEbeng/StudyTracker"
+            href="https://github.com/AurelienEbeng/BugTracker"
             target="blank"
           >
-            <span className="tech-logo github-logo text-white"></span>
+            <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
         <div className="border border-gray-200 rounded-2xl h-130 p-4">
