@@ -32,7 +32,7 @@ const Projects = () => {
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
               src="src/assets/bug_tracker.png"
-              alt="study tracker image"
+              alt="bug tracker image"
               className="rounded-2xl"
             />
           </div>
@@ -50,21 +50,23 @@ const Projects = () => {
           </a>
         </div>
         <div className="border border-gray-200 rounded-2xl h-130 p-4">
-          <img
-            src="src/assets/study_tracker_highlight.png"
-            alt="study tracker image"
-            className="rounded-2xl"
-          />
-          <p>
-            MVC application with study time tracking, user authentification,
-            account management, task and session management, and analytics and
-            reporting.
+          <div className="relative">
+            <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
+            <img
+              src="src/assets/alphanumeric_planet_adventures.png"
+              alt="alphanumeric planet adventures image"
+              className="rounded-2xl"
+            />
+          </div>
+          <div className="text-4xl font-bold mt-2">Alphanumeric Planet Adventures</div>
+          <p className="text-black text-lg">
+            Educational game with authentication and progress tracking.
           </p>
           <a
-            href="https://github.com/AurelienEbeng/StudyTracker"
+            href="https://github.com/AurelienEbeng/Alphanumeric-Planet-Adventures"
             target="blank"
           >
-            <span className="tech-logo github-logo text-white"></span>
+            <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
         <div></div>
