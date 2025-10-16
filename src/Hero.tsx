@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="text-4xl">Full-Stack Developer</div>
         <div className="font-semibold text-2xl mt-9 flex justify-evenly">
           <button className="border-2 rounded-full bg-white text-[#161513] p-4 w-50">Get In Touch</button>
-          <button className="border-2 rounded-full p-4 w-50">Download CV</button>
+          <a href="./src/assets/Aurelien Ebeng CV.pdf" className="border-2 rounded-full p-4 w-50" download>Download CV</a>
         </div>
         <div className="flex justify-between mt-9">
           <span className="tech-logo html5-logo"></span>
