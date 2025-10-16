@@ -10,9 +10,9 @@ body{
     background-color: #161513;
 }
 
-@layer base{
-  p{
-    color: white;
+@layer component{
+  .projectCard{
+    @apply border border-gray-200 rounded-2xl h-110 p-4
   }
 }
 

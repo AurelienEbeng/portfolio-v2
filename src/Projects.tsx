@@ -1,10 +1,10 @@
 const Projects = () => {
   return (
-    <div className="bg-white" id="projects">
-      <div className="font-extrabold text-4xl pt-4">Projects</div>
+    <div className="bg-white pt-22 pb-10" id="projects">
+      <div className="font-extrabold text-4xl pb-4">Projects</div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 p-10">
-        <div className="border border-gray-200 rounded-2xl h-130 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-10">
+        <div className="projectCard">
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
@@ -27,7 +27,7 @@ const Projects = () => {
             <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
-        <div className="border border-gray-200 rounded-2xl h-130 p-4">
+        <div className="projectCard">
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
@@ -49,7 +49,7 @@ const Projects = () => {
             <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
-        <div className="border border-gray-200 rounded-2xl h-130 p-4">
+        <div className="projectCard">
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
@@ -70,7 +70,7 @@ const Projects = () => {
           </a>
         </div>
         <div></div>
-        <div className="border border-gray-200 rounded-2xl h-130 p-4">
+        <div className="projectCard">
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
