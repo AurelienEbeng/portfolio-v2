@@ -4,11 +4,9 @@ const Navbar = () => {
         <div className="font-extrabold">Aurelien Ebeng</div>
         <div>
             <ul className="flex justify-start text-base font-[Plus Jakarta Sans]">
-                <li className="px-4">Home</li>
-                <li className="px-4">About</li>
-                <li className="px-4">Projects</li>
-                <li className="px-4">Experience</li>
-                <li className="px-4">Skills</li>
+                <li className="px-4"><a href="#">Home</a></li>
+                <li className="px-4"><a href="#about">About</a></li>
+                <li className="px-4"><a href="#projects">Projects</a></li>
             </ul>
         </div>
     </div>

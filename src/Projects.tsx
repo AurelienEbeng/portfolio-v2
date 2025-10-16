@@ -1,6 +1,6 @@
 const Projects = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="projects">
       <div className="font-extrabold text-4xl pt-4">Projects</div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 p-10">
