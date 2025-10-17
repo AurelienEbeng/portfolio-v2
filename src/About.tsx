@@ -7,7 +7,7 @@ const About = () => {
   const pStyle = readMore ? "" : "hidden";
   const toggleReadMore = () => { setReadMore(prevState => !prevState) }
   return (
-    <div className="text-lg font-extralight w-1/2 m-auto pb-10 text-white" id="about">
+    <div className="text-lg font-extralight w-1/2 m-auto pb-10 pt-22 text-white" id="about">
       <p>
         I’m a proactive Computer Science graduate from LaSalle College with a
         passion for web development. I am dedicated to developing user
