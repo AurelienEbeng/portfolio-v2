@@ -9,7 +9,7 @@ const Projects = () => {
         {projectsDictionary.title.get(language)}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10">
         <div className="projectCard">
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
@@ -20,10 +20,10 @@ const Projects = () => {
             />
           </div>
           <div className="text-4xl font-bold mt-2">Study Tracker</div>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg text-left">
             {projectsDictionary.studyTrackerParagraphOne.get(language)}
           </p>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg text-left">
             {projectsDictionary.studyTrackerParagraphTwo.get(language)}
           </p>
           <a
@@ -43,10 +43,10 @@ const Projects = () => {
             />
           </div>
           <div className="text-4xl font-bold mt-2">Bug Tracker</div>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg text-left">
             {projectsDictionary.bugTrackerParagraphOne.get(language)}
           </p>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg text-left">
             {projectsDictionary.bugTrackerParagraphTwo.get(language)}
           </p>
           <a href="https://github.com/AurelienEbeng/BugTracker" target="blank">
@@ -65,7 +65,7 @@ const Projects = () => {
           <div className="text-4xl font-bold mt-2">
             Alphanumeric Planet Adventures
           </div>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg text-left">
             {projectsDictionary.alphanumericPlanetAdventuresParagraphOne.get(
               language
             )}
@@ -77,7 +77,7 @@ const Projects = () => {
             <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
-        <div></div>
+        <div className="hidden lg:block"></div>
         <div className="projectCard">
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
@@ -88,7 +88,7 @@ const Projects = () => {
             />
           </div>
           <div className="text-4xl font-bold mt-2">Django Blog</div>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg text-left">
             {projectsDictionary.djangoBlogParagraphOne.get(language)}
           </p>
           <a href="https://github.com/AurelienEbeng/Django-Blog" target="blank">
