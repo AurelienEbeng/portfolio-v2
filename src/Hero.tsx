@@ -9,17 +9,18 @@ const Hero = () => {
       <div>
         <div className="text-6xl">{heroDictionary.intro.get(language)}</div>
         <div className="text-4xl">{heroDictionary.profession.get(language)}</div>
-        <div className="font-semibold text-2xl mt-9 flex justify-evenly">
+        <div className="font-semibold text-2xl mt-9 flex flex-col justify-evenly">
           <button className="border-2 rounded-full bg-white text-[#161513] p-4 w-70">
             {heroDictionary.btn1.get(language)}
           </button>
-          <a
+          <button className="border-2 rounded-full p-4 w-70">
+            <a
             href="./src/assets/Aurelien Ebeng CV.pdf"
-            className="border-2 rounded-full p-4 w-70"
             download
           >
             {heroDictionary.btn2.get(language)}
           </a>
+          </button>
         </div>
         <div className="flex justify-between mt-9">
           <span className="tech-logo html5-logo"></span>

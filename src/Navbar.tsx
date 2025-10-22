@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-center md:justify-end w-full md:px-40 py-6 bg-[#222222] text-white fixed z-100">
+    <div className="w-full top-0 flex flex-row justify-center py-6 bg-[#222222] text-white fixed z-100">
       <ul className="flex  text-base font-[Plus Jakarta Sans]">
         <li className="px-4">
           <a href="#">{navbarDictionary.home.get(language)}</a>
