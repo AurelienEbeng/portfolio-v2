@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useLanguageContext } from "./context/LanguageContext";
 
 const Navbar = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const {language, changeLanguage} = useLanguageContext();
 
   const handleLanguageChange = (event: any) => {
-    setSelectedLanguage(event.target.value);
+    changeLanguage(event.target.value);
   };
 
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
         </ul>
         <select
           id="languageSelector"
-          value={selectedLanguage}
+          value={language}
           onChange={handleLanguageChange}
         >
           <option value="en" className="text-black">
