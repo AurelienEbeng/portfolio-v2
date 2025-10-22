@@ -4,7 +4,7 @@ import React, {
   useContext,
   type ReactNode,
 } from "react";
-
+import { languages } from "../enums/Languages";
 interface LanguageContextType {
   language: string;
   changeLanguage(newLanguage: string): void;
@@ -18,8 +18,10 @@ interface LanguageProviderProps {
   children: ReactNode;
 }
 
-export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState<string>("en");
+export const LanguageProvider: React.FC<LanguageProviderProps> = ({
+  children,
+}) => {
+  const [language, setLanguage] = useState<string>(languages.en);
 
   const changeLanguage = (newLanguage: string) => {
     setLanguage(newLanguage);

@@ -1,4 +1,5 @@
 import { useLanguageContext } from "./context/LanguageContext";
+import { languages } from "./enums/Languages";
 
 const Navbar = () => {
   const {language, changeLanguage} = useLanguageContext();
@@ -27,10 +28,10 @@ const Navbar = () => {
           value={language}
           onChange={handleLanguageChange}
         >
-          <option value="en" className="text-black">
+          <option value={languages.en} className="text-black">
             English
           </option>
-          <option value="fr" className="text-black">
+          <option value={languages.fr} className="text-black">
             Français
           </option>
         </select>
