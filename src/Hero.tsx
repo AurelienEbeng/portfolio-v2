@@ -5,7 +5,7 @@ const Hero = () => {
   const { language } = useLanguageContext();
 
   return (
-    <div className="font-extrabold text-white text-center flex flex-row h-screen items-center justify-center sm:pt-22">
+    <div className="font-extrabold text-white text-center lg:flex lg:flex-row lg:h-screen lg:items-center lg:justify-center sm:pt-22 pt-40">
       <div>
         <div className="text-4xl sm:text-6xl">
           {heroDictionary.intro.get(language)}
