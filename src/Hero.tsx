@@ -3,6 +3,10 @@ import { heroDictionary } from "./language_dictionaries/HeroDictionary";
 
 const Hero = () => {
   const { language } = useLanguageContext();
+  function openEmailClient() {
+    const mailtoLink = `mailto:ebengaurelien@gmail.com`;
+    window.location.href = mailtoLink;
+  }
 
   return (
     <div className="font-extrabold text-white text-center lg:flex lg:flex-row lg:h-screen lg:items-center lg:justify-center sm:pt-22 pt-40">
@@ -14,7 +18,10 @@ const Hero = () => {
           {heroDictionary.profession.get(language)}
         </div>
         <div className="font-semibold text-2xl flex flex-col items-center justify-center sm:flex-row sm:gap-8">
-          <button className="border-2 rounded-full bg-white text-[#161513] p-4 w-70 mt-4">
+          <button
+            className="border-2 rounded-full bg-white text-[#161513] p-4 w-70 mt-4"
+            onClick={openEmailClient}
+          >
             {heroDictionary.btn1.get(language)}
           </button>
           <button className="border-2 rounded-full p-4 w-70 mt-4">
