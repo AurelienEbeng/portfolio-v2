@@ -23,7 +23,7 @@ const Hero = () => {
             </a>
           </button>
         </div>
-        <div className="flex justify-between mt-9 px-2">
+        <div className="flex justify-between mt-9 px-2 md:px-12 lg:px-0">
           <span className="tech-logo html5-logo"></span>
           <span className="tech-logo css3-logo"></span>
           <span className="tech-logo js-logo"></span>
