@@ -1,7 +1,13 @@
+import { useLanguageContext } from "./context/LanguageContext";
+import { projectsDictionary } from "./language_dictionaries/ProjectsDictionary";
+
 const Projects = () => {
+  const { language } = useLanguageContext();
   return (
     <div className="bg-white pt-22 pb-10" id="projects">
-      <div className="font-extrabold text-4xl pb-4">Projects</div>
+      <div className="font-extrabold text-4xl pb-4">
+        {projectsDictionary.title.get(language)}
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-10">
         <div className="projectCard">
@@ -15,11 +21,11 @@ const Projects = () => {
           </div>
           <div className="text-4xl font-bold mt-2">Study Tracker</div>
           <p className="text-black text-lg">
-            MVC application with study time tracking, user authentification,
-            account management, task management, session management, analytics and
-            reporting. 
+            {projectsDictionary.studyTrackerParagraphOne.get(language)}
           </p>
-          <p className="text-black text-lg">I have recorded over 700 hours of studying.</p>
+          <p className="text-black text-lg">
+            {projectsDictionary.studyTrackerParagraphTwo.get(language)}
+          </p>
           <a
             href="https://github.com/AurelienEbeng/StudyTracker"
             target="blank"
@@ -38,14 +44,12 @@ const Projects = () => {
           </div>
           <div className="text-4xl font-bold mt-2">Bug Tracker</div>
           <p className="text-black text-lg">
-            MVC application with user authentification,
-            account management, roles and permissions.
+            {projectsDictionary.bugTrackerParagraphOne.get(language)}
           </p>
-          <p className="text-black text-lg">Permits teams to manage bugs.</p>
-          <a
-            href="https://github.com/AurelienEbeng/BugTracker"
-            target="blank"
-          >
+          <p className="text-black text-lg">
+            {projectsDictionary.bugTrackerParagraphTwo.get(language)}
+          </p>
+          <a href="https://github.com/AurelienEbeng/BugTracker" target="blank">
             <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
@@ -58,9 +62,13 @@ const Projects = () => {
               className="rounded-2xl"
             />
           </div>
-          <div className="text-4xl font-bold mt-2">Alphanumeric Planet Adventures</div>
+          <div className="text-4xl font-bold mt-2">
+            Alphanumeric Planet Adventures
+          </div>
           <p className="text-black text-lg">
-            Educational game with authentication and progress tracking.
+            {projectsDictionary.alphanumericPlanetAdventuresParagraphOne.get(
+              language
+            )}
           </p>
           <a
             href="https://github.com/AurelienEbeng/Alphanumeric-Planet-Adventures"
@@ -81,12 +89,9 @@ const Projects = () => {
           </div>
           <div className="text-4xl font-bold mt-2">Django Blog</div>
           <p className="text-black text-lg">
-            Blog with authentication system and article management.
+            {projectsDictionary.djangoBlogParagraphOne.get(language)}
           </p>
-          <a
-            href="https://github.com/AurelienEbeng/Django-Blog"
-            target="blank"
-          >
+          <a href="https://github.com/AurelienEbeng/Django-Blog" target="blank">
             <span className="tech-logo github-logo text-black"></span>
           </a>
         </div>
