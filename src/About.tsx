@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <div
-      className="text-lg font-extralight w-full px-5 pb-10 pt-22 text-white"
+      className="text-lg font-extralight w-full px-5 pb-10 pt-22 text-white sm:px-30 lg:px-60"
       id="about"
     >
       <p className="text-left">{aboutDictionary.paragraphOne.get(language)}</p> <br />
