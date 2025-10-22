@@ -1,5 +1,6 @@
 import { useLanguageContext } from "./context/LanguageContext";
 import { languages } from "./enums/Languages";
+import { navbarDictionary } from "./language_dictionaries/NavbarDictionary";
 
 const Navbar = () => {
   const {language, changeLanguage} = useLanguageContext();
@@ -14,13 +15,13 @@ const Navbar = () => {
       <div className="flex">
         <ul className="flex justify-start text-base font-[Plus Jakarta Sans]">
           <li className="px-4">
-            <a href="#">Home</a>
+            <a href="#">{navbarDictionary.home.get(language)}</a>
           </li>
           <li className="px-4">
-            <a href="#about">About</a>
+            <a href="#about">{navbarDictionary.about.get(language)}</a>
           </li>
           <li className="px-4">
-            <a href="#projects">Projects</a>
+            <a href="#projects">{navbarDictionary.projects.get(language)}</a>
           </li>
         </ul>
         <select
