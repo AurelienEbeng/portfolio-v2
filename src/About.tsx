@@ -1,46 +1,41 @@
 import { useState } from "react";
+import { aboutDictionary } from "./language_dictionaries/AboutDictionary";
+import { useLanguageContext } from "./context/LanguageContext";
 
 const About = () => {
   const [readMore, setReadMore] = useState<Boolean>(false);
-  const readMoreBtnStyle = readMore ? "hidden" : "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-5";
-  const readLessBtnStyle = readMore ? "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-5" : "hidden";
+  const readMoreBtnStyle = readMore
+    ? "hidden"
+    : "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-5";
+  const readLessBtnStyle = readMore
+    ? "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-5"
+    : "hidden";
   const pStyle = readMore ? "" : "hidden";
-  const toggleReadMore = () => { setReadMore(prevState => !prevState) }
+  const toggleReadMore = () => {
+    setReadMore((prevState) => !prevState);
+  };
+  const { language } = useLanguageContext();
+
   return (
-    <div className="text-lg font-extralight w-1/2 m-auto pb-10 pt-22 text-white" id="about">
-      <p>
-        I’m a proactive Computer Science graduate from LaSalle College with a
-        passion for web development. I am dedicated to developing user
-        interfaces and backend systems that work together to create a cohesive
-        user experience.
-      </p>
-      <p>
-        We did algorithms, data structures, design patterns, software
-        development life cycles, database normalization and object-oriented
-        programming to have a solid foundation in programming during my program.
-      </p>
-      <button className={readMoreBtnStyle} onClick = {toggleReadMore}>Read More</button>
+    <div
+      className="text-lg font-extralight w-1/2 m-auto pb-10 pt-22 text-white"
+      id="about"
+    >
+      <p>{aboutDictionary.paragraphOne.get(language)}</p> <br />
+      <p>{aboutDictionary.paragraphTwo.get(language)}</p> <br />
+      <button className={readMoreBtnStyle} onClick={toggleReadMore}>
+        {aboutDictionary.btnReadMore.get(language)}
+      </button>
+      <p className={pStyle}>{aboutDictionary.paragraphThree.get(language)}</p>
+      <br />
       <p className={pStyle}>
-        I had the chance to work on several projects with different people
-        across several technologies improving my communication skills and
-        ability to learn fast. I also worked on a few personal projects to
-        further my discipline and perseverance.
+        {aboutDictionary.paragraphFour.get(language)}
       </p>
-      <p className={pStyle}>
-        I love reading books on productivity. So Good They Can’t Ignore You
-        tells you that to have a fulfilling career you need rare and valuable
-        skills. Deep Work proposes ideas to achieve such skills. Both books are
-        by Cal Newport. Atomic habits by James Clear teaches you how to build
-        good habits and break bad ones. Clean Code by Robert C. Martin
-        encourages you write to readable code. Your code should be easy to
-        understand. I recommend everyone to read the first three. Every
-        developers should also read the last one.
-      </p>
-      <p className={pStyle}>
-        I’m keen on exploring roles in front-end or back-end development where I
-        can further my passion for creating impactful, user-friendly technology.
-      </p>
-      <button className={readLessBtnStyle} onClick={toggleReadMore}>Read Less</button>
+      <br />
+      <p className={pStyle}>{aboutDictionary.paragraphFive.get(language)}</p>
+      <button className={readLessBtnStyle} onClick={toggleReadMore}>
+        {aboutDictionary.btnReadLess.get(language)}
+      </button>
     </div>
   );
 };
