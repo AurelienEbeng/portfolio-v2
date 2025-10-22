@@ -6,11 +6,11 @@ const About = () => {
   const [readMore, setReadMore] = useState<Boolean>(false);
   const readMoreBtnStyle = readMore
     ? "hidden"
-    : "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-5";
+    : "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-2";
   const readLessBtnStyle = readMore
-    ? "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-5"
+    ? "border-2 rounded-full bg-white text-[#161513] p-4 w-50 mt-2"
     : "hidden";
-  const pStyle = readMore ? "" : "hidden";
+  const pStyle = readMore ? "text-left" : "hidden text-left";
   const toggleReadMore = () => {
     setReadMore((prevState) => !prevState);
   };
@@ -18,11 +18,11 @@ const About = () => {
 
   return (
     <div
-      className="text-lg font-extralight w-1/2 m-auto pb-10 pt-22 text-white"
+      className="text-lg font-extralight w-full px-5 pb-10 pt-22 text-white"
       id="about"
     >
-      <p>{aboutDictionary.paragraphOne.get(language)}</p> <br />
-      <p>{aboutDictionary.paragraphTwo.get(language)}</p> <br />
+      <p className="text-left">{aboutDictionary.paragraphOne.get(language)}</p> <br />
+      <p className="text-left">{aboutDictionary.paragraphTwo.get(language)}</p> <br />
       <button className={readMoreBtnStyle} onClick={toggleReadMore}>
         {aboutDictionary.btnReadMore.get(language)}
       </button>
