@@ -1,5 +1,5 @@
 import { useLanguageContext } from "./context/LanguageContext";
-import { hero_dict } from "./language_dictionaries/Hero_dict";
+import { heroDictionary } from "./language_dictionaries/HeroDictionary";
 
 const Hero = () => {
   const { language } = useLanguageContext();
@@ -7,18 +7,18 @@ const Hero = () => {
   return (
     <div className="font-extrabold text-white text-center flex h-screen items-center justify-center pt-22">
       <div>
-        <div className="text-6xl">{hero_dict.intro.get(language)}</div>
-        <div className="text-4xl">{hero_dict.profession.get(language)}</div>
+        <div className="text-6xl">{heroDictionary.intro.get(language)}</div>
+        <div className="text-4xl">{heroDictionary.profession.get(language)}</div>
         <div className="font-semibold text-2xl mt-9 flex justify-evenly">
           <button className="border-2 rounded-full bg-white text-[#161513] p-4 w-70">
-            {hero_dict.btn1.get(language)}
+            {heroDictionary.btn1.get(language)}
           </button>
           <a
             href="./src/assets/Aurelien Ebeng CV.pdf"
             className="border-2 rounded-full p-4 w-70"
             download
           >
-            {hero_dict.btn2.get(language)}
+            {heroDictionary.btn2.get(language)}
           </a>
         </div>
         <div className="flex justify-between mt-9">

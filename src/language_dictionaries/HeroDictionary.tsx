@@ -16,7 +16,7 @@ btn2.set("fr", "Télécharger CV")
 
 
 
-export const hero_dict = {
+export const heroDictionary = {
     intro,
     profession,
     btn1,
