@@ -26,7 +26,7 @@ const Hero = () => {
             {heroDictionary.btn1.get(language)}
           </button>
           <button className="border-2 rounded-full p-4 w-70 mt-4">
-            <a href={cv} download>
+            <a href={cv} download="Aurelien-Ebeng-CV">
               {heroDictionary.btn2.get(language)}
             </a>
           </button>
