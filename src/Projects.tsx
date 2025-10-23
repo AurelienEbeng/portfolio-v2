@@ -14,7 +14,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="public/images/study_tracker_highlight.png"
+              src="/public/images/study-tracker-highlight.png"
               alt="study tracker image"
               className="rounded-2xl"
             />
@@ -37,7 +37,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="public/images/bug_tracker.png"
+              src="/public/images/bug-tracker.png"
               alt="bug tracker image"
               className="rounded-2xl"
             />
@@ -57,7 +57,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="public/images/alphanumeric_planet_adventures.png"
+              src="/public/images/alphanumeric-planet-adventures.png"
               alt="alphanumeric planet adventures image"
               className="rounded-2xl"
             />
@@ -82,7 +82,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="public/images/django_blog.png"
+              src="/public/images/django-blog.png"
               alt="django blog image"
               className="rounded-2xl"
             />
