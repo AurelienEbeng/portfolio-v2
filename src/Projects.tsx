@@ -1,5 +1,9 @@
 import { useLanguageContext } from "./context/LanguageContext";
 import { projectsDictionary } from "./language_dictionaries/ProjectsDictionary";
+import studyTrackerImage from './assets/study-tracker-highlight.png';
+import bugTrackerImage from './assets/bug-tracker.png';
+import alphanumericImage from './assets/alphanumeric-planet-adventures.png';
+import djangoBlogImage from './assets/django-blog.png';
 
 const Projects = () => {
   const { language } = useLanguageContext();
@@ -14,7 +18,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="/public/images/study-tracker-highlight.png"
+              src={studyTrackerImage}
               alt="study tracker image"
               className="rounded-2xl"
             />
@@ -37,7 +41,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="/public/images/bug-tracker.png"
+              src={bugTrackerImage}
               alt="bug tracker image"
               className="rounded-2xl"
             />
@@ -57,7 +61,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="/public/images/alphanumeric-planet-adventures.png"
+              src={alphanumericImage}
               alt="alphanumeric planet adventures image"
               className="rounded-2xl"
             />
@@ -82,7 +86,7 @@ const Projects = () => {
           <div className="relative">
             <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
             <img
-              src="/public/images/django-blog.png"
+              src={djangoBlogImage}
               alt="django blog image"
               className="rounded-2xl"
             />
