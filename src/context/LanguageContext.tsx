@@ -21,11 +21,17 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children,
 }) => {
-  const [language, setLanguage] = useState<string>(languages.en);
+  const [language, setLanguage] = useState<string>(()=>{
+    let lang = navigator.language.slice(0,2);
+    if (lang === languages.en || lang === languages.fr) { return lang}
+    return "en"
+  });
+  
 
   const changeLanguage = (newLanguage: string) => {
     setLanguage(newLanguage);
   };
+  
 
   return (
     <LanguageContext.Provider value={{ language, changeLanguage }}>
