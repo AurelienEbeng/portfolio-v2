@@ -1,6 +1,8 @@
 import { useLanguageContext } from "./context/LanguageContext";
 import { heroDictionary } from "./language_dictionaries/HeroDictionary";
 import cv from "./assets/Aurelien-Ebeng-CV.pdf";
+import cvEN from "./assets/Aurelien-Ebeng-CV-en.pdf";
+import { languages } from "./enums/Languages";
 
 const Hero = () => {
   const { language } = useLanguageContext();
@@ -26,9 +28,15 @@ const Hero = () => {
             {heroDictionary.btn1.get(language)}
           </button>
           <button className="border-2 rounded-full p-4 w-70 mt-4">
-            <a href={cv} download="Aurelien-Ebeng-CV">
-              {heroDictionary.btn2.get(language)}
-            </a>
+            {language === languages.en ? (
+              <a href={cvEN} download="Aurelien-Ebeng-CV">
+                {heroDictionary.btn2.get(language)}
+              </a>
+            ) : (
+              <a href={cv} download="Aurelien-Ebeng-CV">
+                {heroDictionary.btn2.get(language)}
+              </a>
+            )}
           </button>
         </div>
         <div className="flex justify-between mt-9 px-2 md:px-12 lg:px-0">
