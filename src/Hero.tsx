@@ -1,5 +1,6 @@
 import { useLanguageContext } from "./context/LanguageContext";
 import { heroDictionary } from "./language_dictionaries/HeroDictionary";
+import cv from "./assets/Aurelien-Ebeng-CV.pdf";
 
 const Hero = () => {
   const { language } = useLanguageContext();
@@ -25,7 +26,7 @@ const Hero = () => {
             {heroDictionary.btn1.get(language)}
           </button>
           <button className="border-2 rounded-full p-4 w-70 mt-4">
-            <a href="public/Aurelien Ebeng CV.pdf" download>
+            <a href={cv} download>
               {heroDictionary.btn2.get(language)}
             </a>
           </button>
