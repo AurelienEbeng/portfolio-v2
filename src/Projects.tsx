@@ -30,9 +30,16 @@ const Projects = () => {
           </p>
           <div className="flex justify-center items-center pt-20">
             <a
+              href="https://www.figma.com/files/team/1473777758538429276/resources/community/file/1498113978492175844?fuid=1473777754971358507"
+              target="blank"
+              className="py-2 px-4 rounded-2xl bg-gray-500 hover:bg-black hover:text-white font-bold text-xl"
+            >
+              Design
+            </a>
+            <a
               href="https://performancetraininggym.netlify.app/"
               target="blank"
-              className="py-2 px-4 rounded-2xl bg-gray-500 font-bold text-xl"
+              className="py-2 px-4 rounded-2xl bg-gray-500 hover:bg-black hover:text-white  font-bold text-xl"
             >
               Live
             </a>
