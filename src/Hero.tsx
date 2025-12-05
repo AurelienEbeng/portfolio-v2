@@ -27,17 +27,6 @@ const Hero = () => {
           >
             {heroDictionary.btn1.get(language)}
           </button>
-          <button className="border-2 rounded-full p-4 w-70 mt-4">
-            {language === languages.en ? (
-              <a href={cvEN} download="Aurelien-Ebeng-CV">
-                {heroDictionary.btn2.get(language)}
-              </a>
-            ) : (
-              <a href={cv} download="Aurelien-Ebeng-CV">
-                {heroDictionary.btn2.get(language)}
-              </a>
-            )}
-          </button>
         </div>
         <div className="flex justify-between mt-9 px-2 md:px-12 lg:px-0">
           <span className="tech-logo html5-logo"></span>
