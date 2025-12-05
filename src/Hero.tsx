@@ -1,8 +1,5 @@
 import { useLanguageContext } from "./context/LanguageContext";
 import { heroDictionary } from "./language_dictionaries/HeroDictionary";
-import cv from "./assets/Aurelien-Ebeng-CV.pdf";
-import cvEN from "./assets/Aurelien-Ebeng-CV-en.pdf";
-import { languages } from "./enums/Languages";
 
 const Hero = () => {
   const { language } = useLanguageContext();
