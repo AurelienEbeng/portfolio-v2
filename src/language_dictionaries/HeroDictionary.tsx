@@ -3,8 +3,8 @@ intro.set("en","Hi, I'm Aurelien Ebeng");
 intro.set("fr", "Bonjour, je suis Aurelien Ebeng")
 
 const profession = new Map<string,string>();
-profession.set("en","Full-Stack Developer");
-profession.set("fr", "Développeur Full Stack")
+profession.set("en","Frontend Developer specializing in React");
+profession.set("fr", "Développeur front-end spécialisé en React")
 
 const btn1 = new Map<string,string>();
 btn1.set("en","Send me an email");
