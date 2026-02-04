@@ -32,7 +32,6 @@ const About = () => {
         {aboutDictionary.paragraphFour.get(language)}
       </p>
       <br />
-      <p className={pStyle}>{aboutDictionary.paragraphFive.get(language)}</p>
       <button className={readLessBtnStyle} onClick={toggleReadMore}>
         {aboutDictionary.btnReadLess.get(language)}
       </button>

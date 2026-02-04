@@ -1,79 +1,41 @@
 const paragraphOne = new Map<string, string>();
 paragraphOne.set(
   "en",
-  `I’m a proactive Computer Science graduate from LaSalle College with a
-        passion for web development. I am dedicated to developing user
-        interfaces and backend systems that work together to create a cohesive
-        user experience.`
+  `I’m a brillant Frontend Developer specializing in React and modern JavaScript ecosystems, focused on building scalable, high-performance web applications. I translate complex business requirements into clean, maintainable architecture and intuitive user experiences that drive real product value.`,
 );
 paragraphOne.set(
   "fr",
-  `Diplômé en informatique du Collège LaSalle, je suis dynamique et passionné 
-    par le développement web. Je me consacre au développement d'interfaces utilisateur et de systèmes 
-    back-end qui fonctionnent ensemble pour créer une expérience utilisateur cohérente.`
+  `Je suis un développeur front-end brillant, spécialisé dans React et les écosystèmes JavaScript modernes, et je me concentre sur la création d'applications web performantes et évolutives. Je traduis des exigences métier complexes en une architecture propre et maintenable, ainsi qu'en expériences utilisateur intuitives qui génèrent une réelle valeur ajoutée pour le produit.`,
 );
 
 const paragraphTwo = new Map<string, string>();
 paragraphTwo.set(
   "en",
-  `We did algorithms, data structures, design patterns, software
-        development life cycles, database normalization and object-oriented
-        programming to have a solid foundation in programming during my program.`
+  `My experience spans designing responsive, pixel-perfect interfaces from Figma mock-ups, architecting component-driven systems, integrating RESTful APIs, and implementing secure authentication and authorization flows. I’ve developed applications such as study-time management and bug-tracking platforms, working across frontend and backend layers to ensure seamless data flow, performance optimization, and code quality.`,
 );
 paragraphTwo.set(
   "fr",
-  `Nous avons étudié les algorithmes, les structures de données, les modèles de conception, les cycles de 
-  vie de développement logiciel, la normalisation des bases de données et la programmation orientée objet 
-  afin d'acquérir des bases solides en programmation au cours de mon programme.`
+  `Mon expérience englobe la conception d'interfaces réactives et d'une grande précision à partir de maquettes Figma, l'architecture de systèmes orientés composants, l'intégration d'API RESTful et la mise en œuvre de flux d'authentification et d'autorisation sécurisés. J'ai développé des applications telles que des plateformes de gestion du temps d'étude et de suivi des bogues, en travaillant sur les couches front-end et back-end afin de garantir un flux de données fluide, une optimisation des performances et une qualité de code irréprochable.`,
 );
 
 const paragraphThree = new Map<string, string>();
 paragraphThree.set(
   "en",
-  `I had the chance to work on several projects with different people
-        across several technologies improving my communication skills and
-        ability to learn fast. I also worked on a few personal projects to
-        further my discipline and perseverance.`
+  `I prioritize writing modular, reusable code, enforcing best practices, and building systems that are easy to scale and maintain. Beyond shipping features, I think critically about performance, accessibility, and user experience to ensure products are both technically robust and user centered.`,
 );
 paragraphThree.set(
   "fr",
-  `J'ai eu la chance de travailler sur plusieurs projets avec différentes personnes et sur différentes 
-  technologies, ce qui a amélioré mes compétences en communication et ma capacité d'apprentissage rapide. 
-  J'ai également travaillé sur quelques projets personnels pour renforcer ma discipline et ma persévérance.`
+  `Je privilégie l'écriture de code modulaire et réutilisable, l'application des meilleures pratiques et la conception de systèmes faciles à faire évoluer et à maintenir. Au-delà du simple déploiement de fonctionnalités, j'accorde une attention particulière aux performances, à l'accessibilité et à l'expérience utilisateur afin de garantir des produits à la fois robustes techniquement et centrés sur l'utilisateur.`,
 );
 
 const paragraphFour = new Map<string, string>();
 paragraphFour.set(
   "en",
-  `I love reading books on productivity. " So Good They Can’t Ignore You "
-        tells you that to have a fulfilling career you need rare and valuable
-        skills. " Deep Work " proposes ideas to achieve such skills. Both books are
-        by Cal Newport. " Atomic habits " by James Clear teaches you how to build
-        good habits and break bad ones. " Clean Code " by Robert C. Martin
-        encourages you write to readable code. Your code should be easy to
-        understand. I recommend everyone to read the first three. Every
-        developers should also read the last one.`
+  `I’m driven by opportunities to collaborate with ambitious teams, contribute to product strategy, and build innovative solutions that create measurable impact. If you're building something meaningful, let’s connect.`,
 );
 paragraphFour.set(
   "fr",
-  `J'adore lire des livres sur la productivité. « So Good They Can’t Ignore You »
-    explique que pour une carrière épanouissante, il faut des compétences rares et précieuses. 
-    « Deep Work » propose des idées pour acquérir ces compétences. Les deux livres sont de Cal Newport. 
-    « Atomic Habits » de James Clear vous apprend à développer de bonnes habitudes et à vous débarrasser des mauvaises. 
-    « Clean Code » de Robert C. Martin vous encourage à écrire du code lisible. Votre code doit être facile à comprendre. 
-    Je recommande à tous de lire les trois premiers. Tous les développeurs devraient également lire le dernier.`
-);
-
-const paragraphFive = new Map<string, string>();
-paragraphFive.set(
-  "en",
-  `I’m keen on exploring opportunities in front-end or back-end development where I
-        can further my passion for creating impactful, user-friendly technology.`
-);
-paragraphFive.set(
-  "fr",
-  `Je suis intéressé par des opportunités de développement front-end ou back-end où je pourrai développer ma passion pour la 
-  création de technologies percutantes et conviviales.`
+  `Je suis motivé par les opportunités de collaborer avec des équipes ambitieuses, de contribuer à la stratégie produit et de concevoir des solutions innovantes ayant un impact concret. Si vous développez quelque chose d'important, contactez-moi.`,
 );
 
 const btnReadMore = new Map<string, string>();
@@ -89,7 +51,6 @@ export const aboutDictionary = {
   paragraphTwo,
   paragraphThree,
   paragraphFour,
-  paragraphFive,
   btnReadLess,
   btnReadMore,
 };
