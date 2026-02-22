@@ -11,7 +11,7 @@ const Footer = () => {
             <span className="tech-logo github-logo text-white"></span>
           </a>
           <a
-            href="https://www.linkedin.com/in/aurelien-ebeng/"
+            href="https://www.linkedin.com/in/aurelien-ebeng-developer"
             target="blank"
           >
             <span className="tech-logo linkedin-logo"></span>
