@@ -1,41 +1,122 @@
 const paragraphOne = new Map<string, string>();
 paragraphOne.set(
   "en",
-  `I’m a brillant Frontend Developer specializing in React and modern JavaScript ecosystems, focused on building scalable, high-performance web applications. I translate complex business requirements into clean, maintainable architecture and intuitive user experiences that drive real product value.`,
+  `I’m a Full-Stack Developer specializing in React and Django, building scalable, production-ready web applications with clean architecture and strong business logic. I bridge modern frontend engineering with robust backend systems to deliver products that are both technically sound and user-centered.`,
 );
 paragraphOne.set(
   "fr",
-  `Je suis un développeur front-end brillant, spécialisé dans React et les écosystèmes JavaScript modernes, et je me concentre sur la création d'applications web performantes et évolutives. Je traduis des exigences métier complexes en une architecture propre et maintenable, ainsi qu'en expériences utilisateur intuitives qui génèrent une réelle valeur ajoutée pour le produit.`,
+  `Je suis Développeur Full Stack spécialisé en React et Django, avec une forte expertise dans la conception d’applications web performantes, évolutives et orientées métier. J’allie ingénierie frontend moderne et architecture backend robuste afin de transformer des exigences fonctionnelles complexes en solutions techniques propres, maintenables et efficaces.`,
 );
 
 const paragraphTwo = new Map<string, string>();
 paragraphTwo.set(
   "en",
-  `My experience spans designing responsive, pixel-perfect interfaces from Figma mock-ups, architecting component-driven systems, integrating RESTful APIs, and implementing secure authentication and authorization flows. I’ve developed applications such as study-time management and bug-tracking platforms, working across frontend and backend layers to ensure seamless data flow, performance optimization, and code quality.`,
+  `On the frontend, I craft pixel-perfect, responsive interfaces directly from Figma designs, architect component-driven systems, and manage complex UI state with clarity and precision. On the backend, I design RESTful APIs using Django and Django Rest Framework, implement structured service layers for business logic, and ensure data integrity through well-designed models and validation rules.`,
 );
 paragraphTwo.set(
   "fr",
-  `Mon expérience englobe la conception d'interfaces réactives et d'une grande précision à partir de maquettes Figma, l'architecture de systèmes orientés composants, l'intégration d'API RESTful et la mise en œuvre de flux d'authentification et d'autorisation sécurisés. J'ai développé des applications telles que des plateformes de gestion du temps d'étude et de suivi des bogues, en travaillant sur les couches front-end et back-end afin de garantir un flux de données fluide, une optimisation des performances et une qualité de code irréprochable.`,
+  `Côté frontend, je conçois des interfaces pixel-perfect à partir de maquettes Figma, j’architecture des systèmes basés sur des composants réutilisables et je gère des états applicatifs complexes avec rigueur. Côté backend, je développe des APIs REST sécurisées avec Django et Django Rest Framework, en structurant clairement la logique métier dans des couches dédiées (service layer) afin de garantir séparation des responsabilités, testabilité et scalabilité.`,
 );
 
 const paragraphThree = new Map<string, string>();
 paragraphThree.set(
   "en",
-  `I prioritize writing modular, reusable code, enforcing best practices, and building systems that are easy to scale and maintain. Beyond shipping features, I think critically about performance, accessibility, and user experience to ensure products are both technically robust and user centered.`,
+  `Recently, I designed and deployed a full-stack reservation management platform using React and Django Rest Framework. The application includes:`,
 );
 paragraphThree.set(
   "fr",
-  `Je privilégie l'écriture de code modulaire et réutilisable, l'application des meilleures pratiques et la conception de systèmes faciles à faire évoluer et à maintenir. Au-delà du simple déploiement de fonctionnalités, j'accorde une attention particulière aux performances, à l'accessibilité et à l'expérience utilisateur afin de garantir des produits à la fois robustes techniquement et centrés sur l'utilisateur.`,
+  `J’ai récemment conçu et déployé une plateforme complète de gestion de réservations avec React et Django Rest Framework comprenant :`,
 );
+
+const listOfFunctionalRequirements = [
+  new Map([
+    ["en", "Complete CRUD functionality for reservations"],
+    ["fr", "Implémentation complète du CRUD (Create, Read, Update, Delete)"],
+  ]),
+  new Map([
+    [
+      "en",
+      "Backend-driven business rules (weekday, weekend, and holiday time validations) implemented in a dedicated service layer",
+    ],
+    [
+      "fr",
+      "Validation avancée des règles métier (jours de semaine, week-ends, jours fériés)",
+    ],
+  ]),
+
+  new Map([
+    ["en", "Prevention of invalid registrations (e.g., past classes)"],
+    ["fr", "Blocage des inscriptions à des cours passés"],
+  ]),
+  new Map([
+    ["en", "Descriptive error responses returned by the API"],
+    ["fr", "Messages d’erreur descriptifs renvoyés par l’API"],
+  ]),
+  new Map([
+    ["en", "Dynamic frontend forms with class-based time filtering"],
+    [
+      "fr",
+      "Formulaires dynamiques avec mise à jour des créneaux selon la classe sélectionnée",
+    ],
+  ]),
+
+  new Map([
+    ["en", "Modal-based Create/Update workflows"],
+    ["fr", "Modales pour la création et la modification"],
+  ]),
+
+  new Map([
+    [
+      "en",
+      "Global request state management using React Context to disable action buttons during processing",
+    ],
+    [
+      "fr",
+      "Gestion globale de l’état des requêtes via React Context (désactivation des boutons pendant le traitement)",
+    ],
+  ]),
+
+  new Map([
+    ["en", "Post-submission routing and tabular reservation management views"],
+    ["fr", "Redirection automatique après création"],
+  ]),
+
+  new Map([
+    ["en", "Persistent storage and secure API integration"],
+    ["fr", "Affichage des réservations sous forme tabulaire"],
+  ]),
+
+  new Map([
+    [
+      "en",
+      "Production deployment (Frontend on Netlify, Backend on PythonAnywhere)",
+    ],
+    [
+      "fr",
+      "Déploiement en production (Frontend sur Netlify, Backend sur PythonAnywhere)",
+    ],
+  ]),
+];
 
 const paragraphFour = new Map<string, string>();
 paragraphFour.set(
   "en",
-  `I’m driven by opportunities to collaborate with ambitious teams, contribute to product strategy, and build innovative solutions that create measurable impact. If you're building something meaningful, let’s connect.`,
+  `I focus on writing modular, maintainable code with clear separation of concerns — keeping business logic out of views, structuring scalable API layers, and building reusable frontend components that remain easy to extend.`,
 );
 paragraphFour.set(
   "fr",
-  `Je suis motivé par les opportunités de collaborer avec des équipes ambitieuses, de contribuer à la stratégie produit et de concevoir des solutions innovantes ayant un impact concret. Si vous développez quelque chose d'important, contactez-moi.`,
+  `Je privilégie une architecture claire, modulaire et évolutive, en séparant strictement la logique métier des vues et en construisant des composants frontend réutilisables et maintenables.`,
+);
+
+const paragraphFive = new Map<string, string>();
+paragraphFive.set(
+  "en",
+  `I’m motivated by complex problems, clean architecture, and collaborating with teams that care about building meaningful, scalable products. If you’re building something impactful, send me an email.`,
+);
+
+paragraphFive.set(
+  "fr",
+  `Je suis motivé par les environnements ambitieux, les produits à fort impact et les défis techniques qui nécessitent réflexion et rigueur architecturale. Si vous développez un produit innovant, écrivez moi.`,
 );
 
 const btnReadMore = new Map<string, string>();
@@ -51,6 +132,8 @@ export const aboutDictionary = {
   paragraphTwo,
   paragraphThree,
   paragraphFour,
+  paragraphFive,
   btnReadLess,
   btnReadMore,
+  listOfFunctionalRequirements,
 };
