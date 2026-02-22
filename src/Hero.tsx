@@ -33,6 +33,9 @@ const Hero = () => {
           <span className="tech-logo typescript-logo"></span>
           <span className="tech-logo tailwindcss-logo"></span>
           <span className="tech-logo figma-logo"></span>
+        </div>
+        <div className="flex justify-evenly pt-9">
+          <span className="tech-logo django-logo"></span>
           <span className="tech-logo git-logo"></span>
           <span className="tech-logo github-logo"></span>
         </div>
