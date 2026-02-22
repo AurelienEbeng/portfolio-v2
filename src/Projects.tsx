@@ -9,7 +9,7 @@ import primalTrainingGym from "./assets/primal-training.png";
 const Projects = () => {
   const { language } = useLanguageContext();
   return (
-    <div className="bg-white pt-22 pb-10" id="projects">
+    <div className="bg-white pt-22 pb-10 font-poppins" id="projects">
       <div className="font-extrabold text-4xl pb-4">
         {projectsDictionary.title.get(language)}
       </div>
