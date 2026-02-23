@@ -21,29 +21,24 @@ const Projects = () => {
             />
           </div>
           <div className="text-4xl font-bold mt-2">Primal Training Gym</div>
-          <p className="text-black text-lg text-left">
-            Primal training gym website. Still working on it.
-          </p>
           <div className="flex justify-center items-center pt-20">
             <a
-              href="https://www.figma.com/files/team/1473777758538429276/resources/community/file/1498113978492175844?fuid=1473777754971358507"
+              href="https://www.figma.com/community/file/1498113978492175844/performance-driven-gym"
               target="blank"
-              className="py-2 px-4 rounded-2xl bg-gray-500 hover:bg-black hover:text-white font-bold text-xl"
-            >
-              Design
+             >
+              <span className="tech-logo figma-logo"></span>
             </a>
             <a
-              href="https://performancetraininggym.netlify.app/"
+              href="https://primal-training-gym.netlify.app/"
               target="blank"
-              className="py-2 px-4 rounded-2xl bg-gray-500 hover:bg-black hover:text-white  font-bold text-xl"
-            >
-              Live
+             >
+              <span className="world-icon"></span>
             </a>
             <a
-              href="https://github.com/AurelienEbeng/performance-training-gym"
+              href="https://github.com/AurelienEbeng/primal-training-gym"
               target="blank"
             >
-              <span className="tech-logo github-logo text-black"></span>
+              <span className="github-logo text-black"></span>
             </a>
           </div>
         </div>
