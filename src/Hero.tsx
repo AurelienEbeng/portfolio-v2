@@ -11,10 +11,10 @@ const Hero = () => {
   return (
     <div className="font-extrabold text-white text-center lg:flex lg:flex-row lg:h-screen lg:items-center lg:justify-center sm:pt-22 pt-40 font-poppins">
       <div>
-        <div className="text-4xl sm:text-6xl">
+        <div className="text-4xl sm:text-6xl px-2">
           {heroDictionary.intro.get(language)}
         </div>
-        <div className="text-2xl sm:text-4xl pt-2">
+        <div className="text-2xl sm:text-4xl pt-2 px-2">
           {heroDictionary.profession.get(language)}
         </div>
         <div className="font-semibold text-2xl flex flex-col items-center justify-center sm:flex-row sm:gap-8">
