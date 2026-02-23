@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="w-full px-10 py-6 bg-[#222222] text-white flex justify-between items-center font-poppins">
+    <div className="w-full px-4 md:px-10 py-6 bg-[#222222] text-white flex justify-between items-center font-poppins">
         <div>© Aurelien Ebeng 2026</div>
         <div>
           <a
@@ -8,7 +8,7 @@ const Footer = () => {
             target="blank"
             className="m-5"
           >
-            <span className="tech-logo github-logo text-white"></span>
+            <span className="github-logo text-white"></span>
           </a>
           <a
             href="https://www.linkedin.com/in/aurelien-ebeng-developer"
