@@ -12,13 +12,13 @@ const Navbar = () => {
   return (
     <div className="w-full top-0 flex flex-row justify-center py-6 bg-[#222222] text-white fixed z-100 font-poppins">
       <ul className="flex  text-base font-jakarta">
-        <li className="px-4">
+        <li className="px-2 md:px-4">
           <a href="#">{navbarDictionary.home.get(language)}</a>
         </li>
-        <li className="px-4">
+        <li className="px-2 md:px-4">
           <a href="#about">{navbarDictionary.about.get(language)}</a>
         </li>
-        <li className="px-4">
+        <li className="px-2 md:px-4">
           <a href="#projects">{navbarDictionary.projects.get(language)}</a>
         </li>
       </ul>
@@ -26,6 +26,7 @@ const Navbar = () => {
         id="languageSelector"
         value={language}
         onChange={handleLanguageChange}
+        className="px-2 md:px-4"
       >
         <option value={languages.en} className="text-black">
           English
