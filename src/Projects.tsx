@@ -21,7 +21,7 @@ const Projects = () => {
             />
           </div>
           <div className="text-2xl font-bold mt-2">Primal Training Gym</div>
-          <div className="flex justify-evenly items-end h-1/2 pb-2">
+          <div className="flex justify-evenly items-end max-sm:h-1/3  md:h-1/4 lg:h-1/2 pb-2">
             <a
               href="https://www.figma.com/community/file/1498113978492175844/performance-driven-gym"
               target="blank"
