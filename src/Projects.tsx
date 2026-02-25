@@ -10,7 +10,7 @@ const Projects = () => {
         {projectsDictionary.title.get(language)}
       </div>
 
-      <div className="m-auto lg:w-1/3 md:w-1/2 px-4">
+      <div className="flex justify-center items-center">
         <div className="projectCard">
           <div>
             <div className="relative">
