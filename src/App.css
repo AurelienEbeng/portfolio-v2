@@ -18,7 +18,7 @@ body {
 
 @layer component {
   .projectCard {
-    @apply border border-gray-200 rounded-2xl h-110 p-4;
+    @apply border border-gray-200 rounded-2xl h-80 p-4 w-84 flex content-between flex-wrap;
   }
 }
 

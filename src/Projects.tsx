@@ -12,26 +12,25 @@ const Projects = () => {
 
       <div className="m-auto lg:w-1/3 md:w-1/2 px-4">
         <div className="projectCard">
-          <div className="relative">
-            <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
-            <img
-              src={primalTrainingGym}
-              alt="primal training gym image"
-              className="rounded-2xl"
-            />
+          <div>
+            <div className="relative">
+              <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute"></div>
+              <img
+                src={primalTrainingGym}
+                alt="primal training gym image"
+                className="rounded-2xl"
+              />
+            </div>
+            <div className="text-2xl font-bold">Primal Training Gym</div>
           </div>
-          <div className="text-2xl font-bold mt-2">Primal Training Gym</div>
-          <div className="flex justify-evenly items-end max-sm:h-1/3  md:h-1/4 lg:h-1/2 pb-2">
+          <div className="flex justify-evenly w-full">
             <a
               href="https://www.figma.com/community/file/1498113978492175844/performance-driven-gym"
               target="blank"
-             >
+            >
               <span className="tech-logo figma-logo"></span>
             </a>
-            <a
-              href="https://primal-training-gym.netlify.app/"
-              target="blank"
-             >
+            <a href="https://primal-training-gym.netlify.app/" target="blank">
               <span className="world-icon"></span>
             </a>
             <a
@@ -42,7 +41,6 @@ const Projects = () => {
             </a>
           </div>
         </div>
-
       </div>
     </div>
   );
