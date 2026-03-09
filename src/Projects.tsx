@@ -23,6 +23,7 @@ const Projects = () => {
             </div>
             <div className="text-2xl font-bold">Primal Training Gym</div>
           </div>
+          <div className="text-sm">{projectsDictionary.projectDescription.get(language)}</div>
           <div className="flex justify-evenly w-full">
             <a
               href="https://www.figma.com/community/file/1498113978492175844/performance-driven-gym"
