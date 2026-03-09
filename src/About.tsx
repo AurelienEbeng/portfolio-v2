@@ -46,9 +46,11 @@ const About = () => {
       <br />
       <p className={pStyle}>{aboutDictionary.paragraphFour.get(language)}</p>
       <br />
+      <p className={pStyle}>{aboutDictionary.paragraphFive.get(language)}</p>
+      <br />
       <p className={pStyle}>
         <button onClick={openEmailClient} className="text-left cursor-pointer">
-          {aboutDictionary.paragraphFive.get(language)}
+          {aboutDictionary.paragraphSix.get(language)}
         </button>
       </p>
       <br />
